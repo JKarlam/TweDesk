@@ -1,0 +1,23 @@
+.textAreaToLabel, .textAreaToLabel:focused {
+	-fx-background-color: transparent ;
+	-fx-background-insets: 0.0px ;
+}
+
+.tweetPane {
+	-fx-border-width: 2.0px ;
+	-fx-border-color: rgb(35,200,220) ;
+	-fx-border-radius: 5.0px ;
+}
+
+.mediaImage {
+	-fx-border-width: 2.0px ;
+	-fx-border-color: black ;
+}
+
+.tweetDate:focused {
+	-fx-text-fill: rgb(35,200,220) ;
+}
+
+.tweetScreenName {
+	-fx-opacity: 70% ;
+}

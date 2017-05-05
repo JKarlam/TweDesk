@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane minHeight="200.0" prefHeight="800.0" prefWidth="1016.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" vbarPolicy="ALWAYS" BorderPane.alignment="CENTER">
+         <content>
+            <AnchorPane fx:id="paneTweets" prefHeight="100.0" prefWidth="1000.0" />
+         </content>
+      </ScrollPane>
+   </center>
+   <top>
+      <Pane prefHeight="60.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="imageUserIcon" fitHeight="40.0" fitWidth="40.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="labelScreenName" layoutX="75.0" layoutY="8.0" prefHeight="40.0" prefWidth="300.0" text="Screen Name">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="tweetLoads" editable="true" layoutX="942.0" layoutY="18.0" prefHeight="25.0" prefWidth="60.0" promptText="20" visibleRowCount="4">
+			    <value>
+			        <String fx:value="20" />
+			    </value>
+			</ComboBox>
+         </children>
+      </Pane>
+   </top>
+</BorderPane>
